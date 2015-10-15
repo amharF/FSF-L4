@@ -1,0 +1,24 @@
+<html>
+<head><link rel=stylesheet type=text/css href="{{ url_for('static', filename='styles.css') }}"></head>
+<body>
+
+<h1>Create a new menu item for {{restaurant.name}}'s menu:</h1>
+
+<form action='#' name='name' method='POST'>
+	<p>Name: </p>
+		<input type='text' size='30' name='item' placeholder='enter item name here'>
+	<p>Description: </p>
+		<input type='text' size='30' name='item' placeholder='enter item description here'>
+	<p>Price: </p>
+		<input type='text' size='30' name='item' placeholder='enter item price here'>
+	<p>Course: </p>
+		<input type="radio" name="course" value="appetizer">appetizer<br>
+		<input type="radio" name="course" value="entree">entree<br>
+		<input type="radio" name="course" value="dessert">dessert<br>
+		<input type="radio" name="course" value="beverage">beverage<br><br>
+<input type='submit' value='Create'>
+</form>
+
+</body>
+
+</html>
